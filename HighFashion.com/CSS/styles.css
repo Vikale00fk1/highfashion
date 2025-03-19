@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.heading{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+/*    background: #000;*/
+    display: flex;
+    overflow: hidden;
+}
+.heading .col{
+    position: relative;
+    width: 20%;
+    height: 100%;
+    background-color: #03332b;
+/*    border: 2px solid #fa0808;*/
+}
+.heading .col img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.5;
+    transition: 0.7s;
+}
+.heading .col img:hover{
+    filter: saturate(0);
+    width: 350px;
+}
+.heading .write-up{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height: auto;
+/*    background-color: #fff;*/
+    z-index: 1;
+    font-family: Poppins;
+    font-size: 50px;
+    color: #fff;
+    
+}
+
+.heading .write-up p{
+    position: relative;
+    width: 500px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.heading .write-up button{
+    position: relative;
+    width: 200px;
+    height: 45px;
+    background-color: #a5760c;
+    color: #fff;
+    border-radius: 20px;
+    font-family: Poppins;
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transition: 1s;
+    margin-top: 20px;
+}
+.heading .write-up button:hover{
+    background-color: #268877;
+    color: black;
+    font-weight: bold;
+}
